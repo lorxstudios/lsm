@@ -31,3 +31,8 @@ def clear():
     # for mac and linux(here, os.name is 'posix')
     else:
         _ = system('clear')
+def exists(x):
+    if os.path.exists(x):
+        return(True)
+    else:
+        return(False)

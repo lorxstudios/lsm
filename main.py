@@ -22,8 +22,11 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
     resp = input("->")
     if resp == "1":
         print("Instalando Actualizador, esto puede tardar unos segundos.")
+        if exists("exit.uwu"):
+            os.remove("exit.uwu")
     elif resp == "2":
         print("Actualización Manual seleccionada, haciendo limpieza de archivos")
+
     else:
         print("Lo siento, no he reconocido lo que has dicho.")
         sexit("Por medidas de seguridad, el programa ha salido. Vuelve a entrar de nuevo si crees que ha sido un error.")

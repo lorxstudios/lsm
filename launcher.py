@@ -1,7 +1,8 @@
+from defs import *
+import os
 secure_endings = ["user-exit"]
 advise = ["error"]
 print("launching lsm")
-import os
 os.system("python3 main.py")
 if not os.path.exists("exit.uwu"):
     input("An unrecognised exit ocurred, returned to launcher")

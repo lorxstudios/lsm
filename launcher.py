@@ -2,7 +2,7 @@ from defs import *
 import os
 if os.path.exists("exit.uwu"):
     os.remove("exit.uwu")
-secure_endings = ["user-exit"]
+secure_endings = ["user-exit","Actualización Manual seleccionada."]
 advise = ["error"]
 print("launching lsm")
 

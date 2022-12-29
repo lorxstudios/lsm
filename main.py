@@ -22,8 +22,15 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
     resp = input("->")
     if resp == "1":
         print("Instalando Actualizador, esto puede tardar unos segundos.")
-        if exists("exit.uwu"):
-            os.remove("exit.uwu")
+        version = urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/version")
+        if exists("updaterfor" + version + ".py"):
+            os.remove("updaterfor" + version + ".py")
+        upd = open("updaterfor" + version + ".py", "x")
+        upd.write("https://raw.githubusercontent.com/lorxstudios/lsm/main/updater.py")
+        upd.close()
+        print("Cerrando LSMe")
+        os.system("python3 "+"updaterfor" + version + ".py")
+        
     elif resp == "2":
         print("Actualización Manual seleccionada, haciendo limpieza de archivos")
 

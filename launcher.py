@@ -5,7 +5,12 @@ if os.path.exists("exit.uwu"):
 secure_endings = ["user-exit"]
 advise = ["error"]
 print("launching lsm")
+
 os.system("python3 main.py")
+if exists("updater.py"):
+    os.remove("updater.py")
+if exists("version"):
+    os.remove("version")
 if not os.path.exists("exit.uwu"):
     input("An unrecognised exit ocurred, returned to launcher")
 else:

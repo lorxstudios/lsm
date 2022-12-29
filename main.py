@@ -20,4 +20,4 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
 else:
     xd.close()
     print(Back.GREEN + "-> no hay actualizaciones pendientes" +  Style.RESET_ALL)
-sexit(input("->"))
+#sexit(input("->"))

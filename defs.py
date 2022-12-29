@@ -2,6 +2,7 @@ import colorama
 from colorama import Fore, Back, Style
 import requests
 import os
+from os import name,system
 def sexit(x=""):
     if os.path.exists("exit.uwu"):
         os.remove("exit.uwu")
@@ -21,3 +22,12 @@ def urlme(x):
     response = requests.get(URL)
     data = response.text
     return(data)
+def clear():
+ 
+    # for windows
+    if name == 'nt':
+        _ = system('cls')
+ 
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = system('clear')

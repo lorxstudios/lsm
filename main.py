@@ -30,9 +30,9 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
         upd.close()
         print("Cerrando LSMe")
         os.system("python3 "+"updaterfor" + version + ".py")
-        
     elif resp == "2":
         print("Actualización Manual seleccionada, haciendo limpieza de archivos")
+        sexit("Actualización Manual seleccionada.")
 
     else:
         print("Lo siento, no he reconocido lo que has dicho.")
@@ -40,4 +40,4 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
 else:
     xd.close()
     print(Back.GREEN + "-> no hay actualizaciones pendientes" +  Style.RESET_ALL)
-#sexit(input("->"))
+    

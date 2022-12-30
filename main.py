@@ -3,6 +3,26 @@ from colorama import Fore, Back, Style
 import requests
 import os
 from defs import *
+def missionmaker():
+    clear()
+    print("Mission Maker")
+    print("-----------------------")
+    input("Pulsa enter para crear una misión")
+    clear()
+    print("Dale un titulo a esta misión:")
+    title = input("->")
+    clear()
+    print("De que trata la misión? ESTE MENSAJE SE VERÁ LITERALMENTE CUANDO EL JUGADOR HAGA ESTA MISIÓN, ESCRIBE COMO SI FUERA UN TITULO.")
+    print("Ejemplo: Consigue 20 de autoestima en solo un evento.")
+    quest = input("->")
+    clear()
+    print("Que recompensa dará esto?")
+    print("Utiliza objetos o LCoins.")
+    rew = input("->")
+    clear()
+    print("Generando archivo de misión.")
+    x = open("data/missions/mission.uwu", "x")
+    x.write("{'title': '"+title+"', 'quest': '"+quest+"', 'reward': '"+rew+"'}")
 print("LSMe")
 print("Lorx Story Maker en español")
 print("------------------------------------------------")
@@ -63,4 +83,6 @@ print("LSMe")
 cmd = input("->")
 if cmd == "storymaker":
     print("storymaker no está disponible.")
+elif cmd == "missionmaker":
+    print("Abriendo MissionMaker...")
 

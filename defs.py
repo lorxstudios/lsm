@@ -3,6 +3,9 @@ from colorama import Fore, Back, Style
 import requests
 import os
 from os import name,system
+import string
+import random
+import time
 def sexit(x=""):
     if os.path.exists("exit.uwu"):
         os.remove("exit.uwu")

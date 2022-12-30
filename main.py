@@ -33,11 +33,34 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
     elif resp == "2":
         print("Actualización Manual seleccionada, haciendo limpieza de archivos")
         sexit("Actualización Manual seleccionada.")
-
     else:
         print("Lo siento, no he reconocido lo que has dicho.")
         sexit("Por medidas de seguridad, el programa ha salido. Vuelve a entrar de nuevo si crees que ha sido un error.")
+
+xd.close()
+print(Back.GREEN + "-> no hay actualizaciones pendientes" +  Style.RESET_ALL)
+print("Bienvenido a LSMe.")
+print("--------------------------------")
+print("Quien eres?")
+user = input("Usuario ->")
+passw = input("Contraseña ->")
+print("Identificando....")
+print("PROGRESO ----------------------")
+dat = ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase + string.digits, k=1000))
+for x in dat:
+    lmao = lmao + x
+    clear()
+    print(lmao)
+    time.sleep(0.000000000000001)
+users = {"yzde":"uwu", "ikr":"psyraven69", "liam":"lima5evr"}
+if user in users:
+    if passw == users.get(user):
+        print("ACCESO ACEPTADO, BIENVENIDO DE NUEVO, "+ user)
 else:
-    xd.close()
-    print(Back.GREEN + "-> no hay actualizaciones pendientes" +  Style.RESET_ALL)
-    
+    sexit("Acceso No Reconocido")
+print("")
+print("LSMe")
+cmd = input("->")
+if cmd == "storymaker":
+    print("storymaker no está disponible.")
+

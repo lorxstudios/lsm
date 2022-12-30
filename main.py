@@ -46,7 +46,7 @@ if urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/main.py") != xd
         if exists("updaterfor" + version + ".py"):
             os.remove("updaterfor" + version + ".py")
         upd = open("updaterfor" + version + ".py", "x")
-        upd.write("https://raw.githubusercontent.com/lorxstudios/lsm/main/updater.py")
+        upd.write(urlme("https://raw.githubusercontent.com/lorxstudios/lsm/main/updater.py"))
         upd.close()
         print("Cerrando LSMe")
         os.system("python3 "+"updaterfor" + version + ".py")

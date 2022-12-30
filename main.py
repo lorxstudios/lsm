@@ -67,6 +67,7 @@ passw = input("Contraseña ->")
 print("Identificando....")
 print("PROGRESO ----------------------")
 dat = ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase + string.digits, k=1000))
+lmao = ""
 for x in dat:
     lmao = lmao + x
     clear()
